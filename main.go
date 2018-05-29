@@ -22,7 +22,7 @@ func main() {
 	for maxProcess >= 0{
 		maxProcess--
 		// ポート番号生成
-		socksPort := 0//strconv.Itoa(50000 + maxProcess)
+		socksPort := strconv.Itoa(0)
 		//controlPort := strconv.Itoa(50000 + maxProcess)
 		orPort := strconv.Itoa(50000 + maxProcess)
 		dirPort := strconv.Itoa(55000 + maxProcess)
