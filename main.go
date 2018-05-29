@@ -17,14 +17,15 @@ func main() {
 	// 	1つのプロセスにつき1つのディレクトリが必要。
 	// NicknameでFITACJPという名前でリレーする。
 
+	// 最大5000プレセス立てられる。
 	maxProcess := 10
 	for maxProcess >= 0{
 		maxProcess--
 		// ポート番号生成
-		socksPort := strconv.Itoa(50000 + maxProcess)
+		socksPort := 0//strconv.Itoa(50000 + maxProcess)
 		//controlPort := strconv.Itoa(50000 + maxProcess)
-		orPort := strconv.Itoa(40000 + maxProcess)
-		dirPort := strconv.Itoa(30000 + maxProcess)
+		orPort := strconv.Itoa(50000 + maxProcess)
+		dirPort := strconv.Itoa(55000 + maxProcess)
 		nickname := "FitAcJp" + strconv.Itoa(maxProcess)
 		directoryName := "DataDirectory/" + strconv.Itoa(maxProcess)
 		// データディレクトリ作成（ダブったらTorが起動できない）
