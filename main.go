@@ -17,7 +17,7 @@ func main() {
 	// 	1つのプロセスにつき1つのディレクトリが必要。
 	// NicknameでFITACJPという名前でリレーする。
 
-	// 最大5000プレセス立てられる。
+	// 最大4999プレセス立てられる。
 	maxProcess := 10
 	for maxProcess >= 0{
 		maxProcess--
