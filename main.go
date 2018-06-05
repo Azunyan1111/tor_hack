@@ -38,7 +38,7 @@ func main() {
 			"-orport",orPort,
 			"-controlport", controlPort, // 使わないのでコメントアウト
 			"-exitrelay","0",
-			"-exitpolicy",`"reject *:*"`,
+			"-exitpolicy",`reject *:*`,
 			"-datadirectory", directoryName,
 			"-dirport",dirPort,
 			"-contactinfo","s15a1302@bene.fit.ac.jp",
