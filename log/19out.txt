@@ -1,0 +1,26 @@
+Jun 05 16:15:28.114 [notice] Tor 0.3.2.10 (git-31cc63deb69db819) running on Darwin with Libevent 2.1.8-stable, OpenSSL 1.0.2o, Zlib 1.2.5, Liblzma N/A, and Libzstd N/A.
+Jun 05 16:15:28.115 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://www.torproject.org/download/download#warning
+Jun 05 16:15:28.115 [notice] Read configuration file "/usr/local/etc/tor/torrc".
+Jun 05 16:15:28.128 [warn] Path for DataDirectory (DataDirectory/19) is relative and will resolve to /Users/admin/go/src/github.com/Azunyan1111/tor_hack/DataDirectory/19. Is this what you wanted?
+Jun 05 16:15:28.130 [warn] Tor is currently configured as a relay and a hidden service. That's not very secure: you should probably run your hidden service in a separate Tor process, at least -- see https://trac.torproject.org/8742
+Jun 05 16:15:28.130 [warn] ControlPort is open, but no authentication method has been configured.  This means that any program on your computer can reconfigure your Tor.  That's bad!  You should upgrade your Tor controller as soon as possible.
+Jun 05 16:15:28.135 [notice] Scheduler type KISTLite has been enabled.
+Jun 05 16:15:28.135 [notice] Opening Control listener on 127.0.0.1:40019
+Jun 05 16:15:28.135 [notice] Opening OR listener on 0.0.0.0:50019
+Jun 05 16:15:28.136 [notice] Opening Directory listener on 0.0.0.0:55019
+Jun 05 16:15:28.000 [notice] Parsing GEOIP IPv4 file /usr/local/Cellar/tor/0.3.2.10/share/tor/geoip.
+Jun 05 16:15:28.000 [notice] Parsing GEOIP IPv6 file /usr/local/Cellar/tor/0.3.2.10/share/tor/geoip6.
+Jun 05 16:15:28.000 [notice] Configured to measure statistics. Look for the *-stats files that will first be written to the data directory in 24 hours from now.
+Jun 05 16:15:28.000 [notice] Your Tor server's identity key fingerprint is 'FitAcJp19 CF5659BFD3A6617A8396C080016DFE507445C180'
+Jun 05 16:15:28.000 [notice] Bootstrapped 0%: Starting
+Jun 05 16:15:28.000 [notice] Starting with guard context "default"
+Jun 05 16:15:30.000 [notice] I learned some more directory information, but not enough to build a circuit: We have no usable consensus.
+Jun 05 16:15:32.000 [notice] I learned some more directory information, but not enough to build a circuit: We have no usable consensus.
+Jun 05 16:15:32.000 [notice] Bootstrapped 50%: Loading relay descriptors
+Jun 05 16:15:47.000 [notice] Bootstrapped 80%: Connecting to the Tor network
+Jun 05 16:15:47.000 [notice] Bootstrapped 85%: Finishing handshake with first hop
+Jun 05 16:15:48.000 [notice] Bootstrapped 90%: Establishing a Tor circuit
+Jun 05 16:15:50.000 [notice] Tor has successfully opened a circuit. Looks like client functionality is working.
+Jun 05 16:15:50.000 [notice] Bootstrapped 100%: Done
+Jun 05 16:15:50.000 [notice] Now checking whether ORPort 150.43.168.101:50019 and DirPort 150.43.168.101:55019 are reachable... (this may take up to 20 minutes -- look for log messages indicating success)
+Jun 05 16:15:53.000 [notice] Catching signal TERM, exiting cleanly.

@@ -33,6 +33,7 @@ func main() {
 		if err := os.MkdirAll(directoryName, 0777); err != nil {
 			panic(err)
 		}
+		exec.Command("'ls'").Start()
 		// tor -socksport 9050 -orport 9051 -exitrelay 0 -nickname FitAcJp -contactinfo s15a1302@bene.fit.ac.jp -exitpolicy "reject *:*" -dirport 9052
 		err := exec.Command("tor",
 			"-socksport", socksPort,
@@ -42,10 +43,11 @@ func main() {
 			"-exitrelay","0",
 			"-exitpolicy",`reject *:*`,
 			"-datadirectory", directoryName,
-				"-MaxMemInQueues", strconv.Itoa(6144 / i) + "MB",
+			"-MaxMemInQueues", strconv.Itoa(6144 / i) + "MB",
 			"-contactinfo","s15a1302@bene.fit.ac.jp",
-			"-nickname",nickname,
-				">> " + "log/" + strconv.Itoa(maxProcess) + ".log").Start()
+			"-nickname",nickname).Start()
+				//">>","test.log").Run()
+				//">> " + "log/" + strconv.Itoa(maxProcess) + ".log").Start()
 		if err !=nil {
 			panic(err)
 		}
