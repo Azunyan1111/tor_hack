@@ -23,7 +23,7 @@ func main() {
 		maxProcess--
 		// ポート番号生成
 		socksPort := strconv.Itoa(0)
-		//controlPort := strconv.Itoa(50000 + maxProcess)
+		controlPort := strconv.Itoa(40000 + maxProcess)
 		orPort := strconv.Itoa(50000 + maxProcess)
 		dirPort := strconv.Itoa(55000 + maxProcess)
 		nickname := "FitAcJp" + strconv.Itoa(maxProcess)
@@ -36,7 +36,7 @@ func main() {
 		err := exec.Command("tor",
 			"-socksport", socksPort,
 			"-orport",orPort,
-			//"-controlport", controlPort, // 使わないのでコメントアウト
+			"-controlport", controlPort, // 使わないのでコメントアウト
 			"-exitrelay","0",
 			"-exitpolicy",`"reject *:*"`,
 			"-datadirectory", directoryName,
