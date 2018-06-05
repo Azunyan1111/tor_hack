@@ -18,7 +18,8 @@ func main() {
 	// NicknameでFITACJPという名前でリレーする。
 
 	// 最大4999プレセス立てられる。
-	maxProcess := 10
+	maxProcess := 20
+	i := maxProcess
 	for maxProcess >= 0{
 		maxProcess--
 		// ポート番号生成
@@ -36,11 +37,12 @@ func main() {
 		err := exec.Command("tor",
 			"-socksport", socksPort,
 			"-orport",orPort,
+			"-dirport",dirPort,
 			"-controlport", controlPort, // 使わないのでコメントアウト
 			"-exitrelay","0",
 			"-exitpolicy",`reject *:*`,
 			"-datadirectory", directoryName,
-			"-dirport",dirPort,
+				"-MaxMemInQueues", strconv.Itoa(6144 / i) + "MB",
 			"-contactinfo","s15a1302@bene.fit.ac.jp",
 			"-nickname",nickname).Start()
 		if err !=nil {
