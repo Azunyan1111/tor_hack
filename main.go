@@ -45,7 +45,7 @@ func main() {
 				"-MaxMemInQueues", strconv.Itoa(6144 / i) + "MB",
 			"-contactinfo","s15a1302@bene.fit.ac.jp",
 			"-nickname",nickname,
-				">> test.log").Start()
+				">> " + "log/" + strconv.Itoa(maxProcess) + ".log").Start()
 		if err !=nil {
 			panic(err)
 		}
