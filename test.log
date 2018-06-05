@@ -1,0 +1,78 @@
+Jun 05 15:54:49.049 [notice] Tor 0.3.2.10 (git-31cc63deb69db819) running on Darwin with Libevent 2.1.8-stable, OpenSSL 1.0.2o, Zlib 1.2.5, Liblzma N/A, and Libzstd N/A.
+Jun 05 15:54:49.049 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://www.torproject.org/download/download#warning
+Jun 05 15:54:49.054 [notice] Read configuration file "/usr/local/etc/tor/torrc".
+Jun 05 15:54:49.069 [warn] Path for DataDirectory (DataDirectory/10) is relative and will resolve to /Users/admin/go/src/github.com/Azunyan1111/tor_hack/DataDirectory/10. Is this what you wanted?
+Jun 05 15:54:49.070 [warn] Tor is currently configured as a relay and a hidden service. That's not very secure: you should probably run your hidden service in a separate Tor process, at least -- see https://trac.torproject.org/8742
+Jun 05 15:54:49.070 [warn] ControlPort is open, but no authentication method has been configured.  This means that any program on your computer can reconfigure your Tor.  That's bad!  You should upgrade your Tor controller as soon as possible.
+Jun 05 15:54:49.076 [notice] Scheduler type KISTLite has been enabled.
+Jun 05 15:54:49.077 [notice] Opening Control listener on 127.0.0.1:9051
+Jun 05 15:54:49.077 [notice] Opening OR listener on 0.0.0.0:80
+Jun 05 15:54:49.077 [warn] Could not bind to 0.0.0.0:80: Permission denied
+Jun 05 15:54:49.078 [notice] Opening Directory listener on 0.0.0.0:443
+Jun 05 15:54:49.078 [warn] Could not bind to 0.0.0.0:443: Permission denied
+Jun 05 15:54:49.078 [notice] Closing partially-constructed Control listener on 127.0.0.1:9051
+Jun 05 15:54:49.078 [warn] Failed to parse/validate config: Failed to bind one of the listener ports.
+Jun 05 15:54:49.078 [err] Reading config failed--see warnings above.
+Jun 05 16:03:02.047 [notice] Tor 0.3.2.10 (git-31cc63deb69db819) running on Darwin with Libevent 2.1.8-stable, OpenSSL 1.0.2o, Zlib 1.2.5, Liblzma N/A, and Libzstd N/A.
+Jun 05 16:03:02.049 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://www.torproject.org/download/download#warning
+Jun 05 16:03:02.049 [notice] Read configuration file "/usr/local/etc/tor/torrc".
+Jun 05 16:03:02.053 [warn] Tor is currently configured as a relay and a hidden service. That's not very secure: you should probably run your hidden service in a separate Tor process, at least -- see https://trac.torproject.org/8742
+Jun 05 16:03:02.053 [notice] Based on detected system memory, MaxMemInQueues is set to 6144 MB. You can override this by setting MaxMemInQueues by hand.
+Jun 05 16:03:02.053 [notice] Scheduler type KISTLite has been enabled.
+Jun 05 16:03:02.053 [notice] Opening Socks listener on 127.0.0.1:9050
+Jun 05 16:03:02.053 [notice] Opening OR listener on 0.0.0.0:9051
+Jun 05 16:03:02.053 [notice] Opening Directory listener on 0.0.0.0:9052
+Jun 05 16:03:02.000 [notice] Parsing GEOIP IPv4 file /usr/local/Cellar/tor/0.3.2.10/share/tor/geoip.
+Jun 05 16:03:02.000 [notice] Parsing GEOIP IPv6 file /usr/local/Cellar/tor/0.3.2.10/share/tor/geoip6.
+Jun 05 16:03:02.000 [notice] Configured to measure statistics. Look for the *-stats files that will first be written to the data directory in 24 hours from now.
+Jun 05 16:03:02.000 [notice] Your Tor server's identity key fingerprint is 'FitAcJp DD7E5D3A0AB3A6CB82E133584C5542219ECBE7D6'
+Jun 05 16:03:02.000 [notice] Bootstrapped 0%: Starting
+Jun 05 16:03:05.000 [notice] Starting with guard context "default"
+Jun 05 16:03:05.000 [notice] Bootstrapped 80%: Connecting to the Tor network
+Jun 05 16:03:06.000 [notice] Bootstrapped 85%: Finishing handshake with first hop
+Jun 05 16:03:07.000 [notice] Bootstrapped 90%: Establishing a Tor circuit
+Jun 05 16:03:08.000 [notice] Tor has successfully opened a circuit. Looks like client functionality is working.
+Jun 05 16:03:08.000 [notice] Bootstrapped 100%: Done
+Jun 05 16:03:08.000 [notice] Now checking whether ORPort 150.43.168.101:9051 and DirPort 150.43.168.101:9052 are reachable... (this may take up to 20 minutes -- look for log messages indicating success)
+
+============================================================ T= 1528182198
+Tor 0.3.2.10 (git-31cc63deb69db819) died: Caught signal 23
+0   tor                                 0x000000010e9a8b7a crash_handler + 45
+1   libsystem_platform.dylib            0x00007fff8992b52a _sigtramp + 26
+2   libsystem_kernel.dylib              0x00007fff95b32eca kevent + 10
+3   libevent-2.1.6.dylib                0x000000010eb06515 event_base_loop + 786
+4   tor                                 0x000000010e93da3a do_main_loop + 1128
+5   tor                                 0x000000010e93fd5f tor_main + 240
+6   tor                                 0x000000010e88d42d main + 25
+7   libdyld.dylib                       0x00007fff912465ad start + 1
+8   ???                                 0x000000000000000f 0x0 + 15
+Jun 05 16:03:27.361 [notice] Tor 0.3.2.10 (git-31cc63deb69db819) running on Darwin with Libevent 2.1.8-stable, OpenSSL 1.0.2o, Zlib 1.2.5, Liblzma N/A, and Libzstd N/A.
+Jun 05 16:03:27.361 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://www.torproject.org/download/download#warning
+Jun 05 16:03:27.361 [notice] Read configuration file "/usr/local/etc/tor/torrc".
+Jun 05 16:03:27.364 [warn] Tor is currently configured as a relay and a hidden service. That's not very secure: you should probably run your hidden service in a separate Tor process, at least -- see https://trac.torproject.org/8742
+Jun 05 16:03:27.364 [notice] Based on detected system memory, MaxMemInQueues is set to 6144 MB. You can override this by setting MaxMemInQueues by hand.
+Jun 05 16:03:27.364 [notice] Scheduler type KISTLite has been enabled.
+Jun 05 16:03:27.364 [notice] Opening Socks listener on 127.0.0.1:9050
+Jun 05 16:03:27.364 [notice] Opening OR listener on 0.0.0.0:9051
+Jun 05 16:03:27.364 [notice] Opening Directory listener on 0.0.0.0:9052
+Jun 05 16:03:27.000 [notice] Parsing GEOIP IPv4 file /usr/local/Cellar/tor/0.3.2.10/share/tor/geoip.
+Jun 05 16:03:27.000 [notice] Parsing GEOIP IPv6 file /usr/local/Cellar/tor/0.3.2.10/share/tor/geoip6.
+Jun 05 16:03:27.000 [notice] Configured to measure statistics. Look for the *-stats files that will first be written to the data directory in 24 hours from now.
+Jun 05 16:03:27.000 [notice] Your Tor server's identity key fingerprint is 'FitAcJp DD7E5D3A0AB3A6CB82E133584C5542219ECBE7D6'
+Jun 05 16:03:27.000 [notice] Bootstrapped 0%: Starting
+Jun 05 16:03:31.000 [notice] Starting with guard context "default"
+Jun 05 16:03:31.000 [notice] Bootstrapped 80%: Connecting to the Tor network
+Jun 05 16:03:32.000 [notice] Bootstrapped 85%: Finishing handshake with first hop
+Jun 05 16:03:33.000 [notice] Bootstrapped 90%: Establishing a Tor circuit
+
+============================================================ T= 1528182215
+Tor 0.3.2.10 (git-31cc63deb69db819) died: Caught signal 23
+0   tor                                 0x0000000109898b7a crash_handler + 45
+1   libsystem_platform.dylib            0x00007fff8992b52a _sigtramp + 26
+2   libsystem_kernel.dylib              0x00007fff95b32eca kevent + 10
+3   libevent-2.1.6.dylib                0x00000001099fd515 event_base_loop + 786
+4   tor                                 0x000000010982da3a do_main_loop + 1128
+5   tor                                 0x000000010982fd5f tor_main + 240
+6   tor                                 0x000000010977d42d main + 25
+7   libdyld.dylib                       0x00007fff912465ad start + 1
+8   ???                                 0x000000000000000f 0x0 + 15

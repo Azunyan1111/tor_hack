@@ -44,7 +44,8 @@ func main() {
 			"-datadirectory", directoryName,
 				"-MaxMemInQueues", strconv.Itoa(6144 / i) + "MB",
 			"-contactinfo","s15a1302@bene.fit.ac.jp",
-			"-nickname",nickname).Start()
+			"-nickname",nickname,
+				">> test.log").Start()
 		if err !=nil {
 			panic(err)
 		}
